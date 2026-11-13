@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Edit site: Marine Layer</title>
+  <meta name="description" content="Edit the details shown on the Marine Layer site.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2316232A'/%3E%3Cpath d='M8 11h16M8 16h11M8 21h14' stroke='%23EEF2F3' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="owner">
+  <a class="skip-link" href="#main">Skip to the form</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="wordmark" href="appointments.html">
+        <svg class="wordmark__mark" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+          <path d="M3 8h18M3 12.5h12M3 17h15" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+        <span data-site="name">Marine Layer</span>
+      </a>
+      <nav class="site-nav owner-nav" aria-label="Owner area">
+        <ul role="list">
+          <li><a href="appointments.html">Appointments</a></li>
+          <li><a href="owner.html" aria-current="page">Edit site</a></li>
+          <li><a href="index.html">View site</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap owner">
+    <div class="owner__head">
+      <h1 class="owner__title" id="edit-title" tabindex="-1">Edit site</h1>
+      <p class="owner__intro">Change the details, hours, services and photos shown on the site. This page has no login yet, so keep the address to yourself.</p>
+      <p class="preview-note" id="store-note" hidden>
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor"/><path d="M8 7v4.5M8 4.6v.1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        <span>Preview mode: changes are saved only in this browser. Visitors on other devices won't see them until the site is connected to a backend, or until the settings file from the end of this page replaces js/config.js.</span>
+      </p>
+    </div>
+
+    <p class="sr-only" id="edit-status" aria-live="polite" aria-atomic="true"></p>
+    <p class="sr-only" id="edit-alert" aria-live="assertive" aria-atomic="true"></p>
+
+    <noscript><p class="flow-notice">This page needs JavaScript. Turn it on in your browser settings and reload the page.</p></noscript>
+
+    <div class="edit">
+      <nav class="edit__nav" aria-label="Sections of this page">
+        <ul role="list">
+          <li><a href="#sec-business">Business</a></li>
+          <li><a href="#sec-contact">Location and contact</a></li>
+          <li><a href="#sec-hours">Hours</a></li>
+          <li><a href="#sec-rules">Booking rules and policies</a></li>
+          <li><a href="#sec-services">Services</a></li>
+          <li><a href="#sec-photos">Photos</a></li>
+          <li><a href="#sec-file">Settings file</a></li>
+        </ul>
+      </nav>
+
+      <form class="edit__form" id="edit-form" novalidate>
+        <section class="edit-section" id="sec-business" aria-labelledby="sec-business-title">
+          <h2 class="edit-section__title" id="sec-business-title">Business</h2>
+          <div data-section="business"></div>
+        </section>
+
+        <section class="edit-section" id="sec-contact" aria-labelledby="sec-contact-title">
+          <h2 class="edit-section__title" id="sec-contact-title">Location and contact</h2>
+          <p class="edit-section__lede">Everything here is public. Leave a field blank to hide it on the site.</p>
+          <div data-section="contact"></div>
+        </section>
+
+        <section class="edit-section" id="sec-hours" aria-labelledby="sec-hours-title">
+          <h2 class="edit-section__title" id="sec-hours-title">Hours</h2>
+          <p class="edit-section__lede">Opening hours in <span data-site="timeZoneLabel">Pacific Time</span>. Changing hours never removes appointments that are already booked.</p>
+          <div data-section="hours"></div>
+        </section>
+
+        <section class="edit-section" id="sec-rules" aria-labelledby="sec-rules-title">
+          <h2 class="edit-section__title" id="sec-rules-title">Booking rules and policies</h2>
+          <div data-section="rules"></div>
+        </section>
+
+        <section class="edit-section" id="sec-services" aria-labelledby="sec-services-title">
+          <h2 class="edit-section__title" id="sec-services-title">Services</h2>
+          <p class="edit-section__lede">Select a service to edit it. Appointments already booked keep the name, length and price they were booked with, even if you change or remove the service.</p>
+          <div data-section="services"></div>
+        </section>
+
+        <section class="edit-section" id="sec-photos" aria-labelledby="sec-photos-title">
+          <h2 class="edit-section__title" id="sec-photos-title">Photos</h2>
+          <p class="edit-section__lede">The current photos are placeholder stock photos. Replace them with your own before the site goes live, and show only your own clients' work.</p>
+          <p class="edit-section__lede">To use your own photo files, put them in a folder called <code>images</code> next to the site and type the path, like <code>images/my-photo.jpg</code>.</p>
+          <div data-section="photos"></div>
+        </section>
+
+        <section class="edit-section" id="sec-file" aria-labelledby="sec-file-title">
+          <h2 class="edit-section__title" id="sec-file-title">Settings file</h2>
+          <div data-section="file"></div>
+        </section>
+
+        <div class="savebar is-clean" id="savebar">
+          <div class="savebar__inner">
+            <p class="savebar__status" id="savebar-status" tabindex="-1">No unsaved changes</p>
+            <div class="savebar__actions">
+              <button type="button" class="button button--quiet" data-action="discard" hidden>Discard changes</button>
+              <button type="submit" class="button button--primary" data-action="save">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <p class="site-footer__name" data-site="name">Marine Layer</p>
+      <p class="site-footer__license" id="license-line">California cosmetology license</p>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/scheduling.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/owner.js"></script>
+</body>
+</html>

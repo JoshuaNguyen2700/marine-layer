@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Appointments: Marine Layer</title>
+  <meta name="description" content="Booked appointments for Marine Layer.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2316232A'/%3E%3Cpath d='M8 11h16M8 16h11M8 21h14' stroke='%23EEF2F3' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="appointments">
+  <a class="skip-link" href="#main">Skip to appointments</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="wordmark" href="appointments.html">
+        <svg class="wordmark__mark" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+          <path d="M3 8h18M3 12.5h12M3 17h15" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+        <span data-site="name">Marine Layer</span>
+      </a>
+      <nav class="site-nav owner-nav" aria-label="Owner area">
+        <ul role="list">
+          <li><a href="appointments.html" aria-current="page">Appointments</a></li>
+          <li><a href="owner.html">Edit site</a></li>
+          <li><a href="index.html">View site</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap owner">
+    <div class="owner__head">
+      <h1 class="owner__title">Appointments</h1>
+      <p class="owner__intro">Upcoming appointments by day, in <span data-site="timeZoneLabel">Pacific Time</span>. This page has no login yet, so keep the address to yourself.</p>
+      <p class="preview-note" data-preview-note hidden>
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor"/><path d="M8 7v4.5M8 4.6v.1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        Preview mode: appointments are saved only in this browser.
+      </p>
+    </div>
+
+    <p class="sr-only" id="owner-status" aria-live="polite" aria-atomic="true"></p>
+
+    <section aria-labelledby="upcoming-title">
+      <h2 class="sr-only" id="upcoming-title" tabindex="-1">Upcoming</h2>
+      <div id="upcoming"><p class="owner-empty">Loading appointments.</p></div>
+    </section>
+
+    <details class="owner-more" id="past-wrap" hidden>
+      <summary id="past-summary">Past appointments</summary>
+      <div id="past"></div>
+    </details>
+
+    <details class="owner-more" id="cancelled-wrap" hidden>
+      <summary id="cancelled-summary">Cancelled appointments</summary>
+      <div id="cancelled"></div>
+    </details>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <p class="site-footer__name" data-site="name">Marine Layer</p>
+      <p class="site-footer__license" id="license-line">California cosmetology license</p>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/scheduling.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/appointments.js"></script>
+</body>
+</html>
