@@ -85,8 +85,7 @@ window.SITE = {
   // it to null to show no photo.
   portrait: {
     src: "images/about-placeholder.jpg",
-    alt: "Placeholder image: a grey silhouette of a person with long hair, standing in for the owner's photo",
-    source: ""
+    alt: "Placeholder image: a grey silhouette of a person with long hair, standing in for the owner's photo"
   },
 
 
