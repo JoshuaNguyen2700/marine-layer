@@ -84,9 +84,9 @@ window.SITE = {
   // model, not the owner: replace it with a photo of you, or set
   // it to null to show no photo.
   portrait: {
-    src: "https://images.pexels.com/photos/24362255/pexels-photo-24362255.jpeg?auto=compress&cs=tinysrgb&w=900",
-    alt: "Placeholder stock photo of a smiling woman with shoulder-length dark hair in a black top, against a grey background",
-    source: "https://www.pexels.com/photo/smiling-woman-in-black-tank-top-24362255/"
+    src: "images/about-placeholder.jpg",
+    alt: "Placeholder image: a grey silhouette of a person with long hair, standing in for the owner's photo",
+    source: ""
   },
 
 
